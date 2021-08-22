@@ -42,7 +42,7 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 * **Kubeflow**
 * **Dockerize tools (TBD)**
 * cookie-cutter : [https://github.com/drivendata/cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science)
-*
+
 
 ### Model Serving
 
