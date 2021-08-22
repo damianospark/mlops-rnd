@@ -63,7 +63,6 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 * Remote Kernel : [https://github.com/tdaff/remote\_ikernel](https://github.com/tdaff/remote_ikernel)
 * slurm : [https://slurm.schedmd.com/documentation.html](https://slurm.schedmd.com/documentation.html)
 
-<br>
 ## Backlog
 
 [https://github.com/dslp/dslp-repo-template](https://github.com/dslp/dslp-repo-template)
