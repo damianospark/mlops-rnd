@@ -8,7 +8,6 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 
 * Design Pattern : [https://github.com/mercari/ml-system-design-pattern](https://github.com/mercari/ml-system-design-pattern)
 
-<br>
 ### EDA / Feature Engineering
 
 * ml-workspace : [https://github.com/ml-tooling/ml-workspace](https://github.com/ml-tooling/ml-workspace)
@@ -20,6 +19,8 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 
 ### Train
 
+* Feast : [https://docs.feast.dev/](https://docs.feast.dev/)
+* Tecton : [https://www.tecton.ai/blog/what-is-a-feature-store/](https://www.tecton.ai/blog/what-is-a-feature-store/) (only available on AWS)
 * Frameworks (Tensorflow, PyTorch, MXNet, Scikit Learn etc.)
 * Ray SGD (TBD)
 
@@ -42,7 +43,6 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 * **Kubeflow**
 * **Dockerize tools (TBD)**
 * cookie-cutter : [https://github.com/drivendata/cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science)
-
 
 ### Model Serving
 
@@ -69,6 +69,7 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 [https://github.com/academic/awesome-datascience](https://github.com/academic/awesome-datascience)
 [https://github.com/alteryx/featuretools](https://github.com/alteryx/featuretools)
 [https://github.com/academic/awesome-datascience#data-sets](https://github.com/academic/awesome-datascience#data-sets)
+[https://github.com/visenger/awesome-mlops](https://github.com/visenger/awesome-mlops)
 
 <br>
 <br>

@@ -1,7 +1,28 @@
 {
   "name": "",
   "isOrdered": true,
-  "folders": {},
+  "folders": {
+    "evidently": {
+      "name": "evidently",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "raycore": {
+      "name": "raycore",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Feature Store-feast": {
+      "name": "Feature Store-feast",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "README": 0
+      }
+    }
+  },
   "files": {
     "README": 0
   }
