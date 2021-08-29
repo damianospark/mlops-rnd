@@ -22,6 +22,8 @@ RUN git clone https://github.com/powerline/fonts.git --depth=1 && \
 #
 # get install script from https://github.com/GoogleCloudPlatform/cloud-sdk-docker/blob/master/Dockerfile
 #
+COPY --from=static-docker-source /usr/bin/docker /usr/bin/docker
+
 ARG CLOUD_SDK_VERSION=354.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 # ENV PATH "$PATH:/opt/google-cloud-sdk/bin/"
@@ -54,8 +56,10 @@ RUN  apt-get -qqy update && apt-get install -qqy \
         google-cloud-sdk-kpt=${CLOUD_SDK_VERSION}-0 \
         google-cloud-sdk-local-extract=${CLOUD_SDK_VERSION}-0 \
         kubectl && \
-    gcloud --version && \
-    docker --version && kubectl version --client
+        # gcloud --version && \
+        # docker --version && kubectl version --client && \
+    clean-layer.sh
+
 
 RUN git config --system credential.'https://source.developers.google.com'.helper gcloud.sh
 
