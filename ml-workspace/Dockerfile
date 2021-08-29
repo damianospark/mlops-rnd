@@ -1,3 +1,5 @@
+FROM docker:19.03.11 as static-docker-source
+
 FROM mltooling/ml-workspace-gpu:0.13.2
 
 #set timezone
@@ -22,7 +24,7 @@ RUN git clone https://github.com/powerline/fonts.git --depth=1 && \
 #
 # get install script from https://github.com/GoogleCloudPlatform/cloud-sdk-docker/blob/master/Dockerfile
 #
-COPY --from=static-docker-source /usr/bin/docker /usr/bin/docker
+COPY --from=static-docker-source /usr/local/bin/docker /usr/local/bin/docker
 
 ARG CLOUD_SDK_VERSION=354.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
@@ -78,19 +80,23 @@ RUN pip install --upgrade cython && \
 
 RUN pip install jupyter_contrib_nbextensions && \
     pip install jlab-enhanced-cell-toolbar && \
+    pip install jupyterlab_execute_time && \
     pip install ipysheet && \
     pip install lux-api  && \
     pip install remote_ikernel  && \
     pip install ssh_ipykernel  && \
     pip install witwidget-gpu && \
-    pip install ai-benchmark & \
+    pip install ai-benchmark && \
     clean-layer.sh
 
  RUN \
-    jupyter labextension install --py luxwidget && \
-    jupyter nbextension enable --py luxwidget && \
+    jupyter labextension install luxwidget --no-build  && \
+    jupyter labextension install wit-widget --no-build && \
+    jupyter labextension install @jupyterlab/toc --no-build && \
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager && \
     jupyter labextension install ipysheet && \
-    jupyter nbextension enable --py --sys-prefix ipysheet && \
-    jupyter labextension install wit-widget && \
-    # jupyter labextension install @jupyter-widgets/jupyterlab-manager && \
+    # jupyter nbextension enable --py luxwidget && \
+    # jupyter nbextension enable --py --sys-prefix ipysheet && \
     clean-layer.sh
+
+
