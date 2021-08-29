@@ -1,6 +1,7 @@
 FROM docker:19.03.11 as static-docker-source
 
-FROM mltooling/ml-workspace-gpu:0.13.2
+# FROM mltooling/ml-workspace-gpu:0.13.2
+FROM mltooling/ml-workspace:0.13.2
 
 #set timezone
 RUN TZ=Asia/Seoul && \
@@ -81,6 +82,7 @@ RUN pip install --upgrade cython && \
 RUN pip install jupyter_contrib_nbextensions && \
     pip install jlab-enhanced-cell-toolbar && \
     pip install jupyterlab_execute_time && \
+    pip install aquirdturtle_collapsible_headings && \
     pip install ipysheet && \
     pip install lux-api  && \
     pip install remote_ikernel  && \
@@ -89,14 +91,15 @@ RUN pip install jupyter_contrib_nbextensions && \
     pip install ai-benchmark && \
     clean-layer.sh
 
- RUN \
+RUN conda install -y --update-all 'jupyterlab=3.1.*' && \
+    clean-layer.sh
+
+RUN \
     jupyter labextension install luxwidget --no-build  && \
     jupyter labextension install wit-widget --no-build && \
     jupyter labextension install @jupyterlab/toc --no-build && \
+    # jupyter labextension install ipysheet --no-build && \
     jupyter labextension install @jupyter-widgets/jupyterlab-manager && \
-    jupyter labextension install ipysheet && \
-    # jupyter nbextension enable --py luxwidget && \
-    # jupyter nbextension enable --py --sys-prefix ipysheet && \
     clean-layer.sh
 
 
