@@ -1,0 +1,2 @@
+All R&D is performed with ml-workspace and VS Code. To optimize this R&D, relevant packages are consolidated in this docker image.
+You can check what packages are installed through Dockerfile. [ml-workspace](https://github.com/ml-tooling/ml-workspace) is outstanding jupyter and jupyterlab environment which integrates convenient and productive tools.

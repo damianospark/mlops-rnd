@@ -21,6 +21,20 @@
       "files": {
         "README": 0
       }
+    },
+    "gcp": {
+      "name": "gcp",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "ml-workspace": {
+      "name": "ml-workspace",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "README": 0
+      }
     }
   },
   "files": {
