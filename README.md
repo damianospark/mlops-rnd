@@ -36,7 +36,7 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 
 ### Data/Notebook Versioning
 
-* **DVC :** [https://github.com/iterative/dvc](https://github.com/iterative/dvc)
+* **DVC :** [https://github.com/iterative/dvc](https://github.com/iterative/dvc),  [https://www.analyticsvidhya.com/blog/2021/06/mlops-versioning-datasets-with-git-dvc/](https://www.analyticsvidhya.com/blog/2021/06/mlops-versioning-datasets-with-git-dvc/)
 
 ### Pipeline build-up/Templating
 
@@ -65,11 +65,35 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 
 ## Backlog
 
+### Dataset for Research
+
+##### Dataset candidates
+
+<span class="colour" style="color: rgb(98, 98, 100);">[https://github.com/awesomedata/awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets)</span>
+[https://towardsdatascience.com/5-data-science-projects-that-you-can-complete-over-the-weekend-34445b14707d](https://towardsdatascience.com/5-data-science-projects-that-you-can-complete-over-the-weekend-34445b14707d)
+
+##### Merlin training with criteo dataset
+
+[https://docs.google.com/document/d/1P\_BerGSP5CNzGjGbRqgMrPcNaCmQuKUyodFaG0jlu9I/edit#heading=h.zdus0kibjxax](https://docs.google.com/document/d/1P_BerGSP5CNzGjGbRqgMrPcNaCmQuKUyodFaG0jlu9I/edit#heading=h.zdus0kibjxax)
+[https://github.com/NVIDIA-Merlin/gcp-ml-ops](https://github.com/NVIDIA-Merlin/gcp-ml-ops)
+
+##### Retail data
+
+[https://www.bls.gov/cew/downloadable-data-files.htm](https://www.bls.gov/cew/downloadable-data-files.htm) [good]
+[https://data.iowa.gov/Sales-Distribution/Iowa-Liquor-Sales/m3tr-qhgy/data](https://data.iowa.gov/Sales-Distribution/Iowa-Liquor-Sales/m3tr-qhgy/data) [good]
+
+##### MLOps based dataset
+
+[https://github.com/GokuMohandas/MLOps](https://github.com/GokuMohandas/MLOps)
+<br>
+### etc
+
 [https://github.com/dslp/dslp-repo-template](https://github.com/dslp/dslp-repo-template)
 [https://github.com/academic/awesome-datascience](https://github.com/academic/awesome-datascience)
 [https://github.com/alteryx/featuretools](https://github.com/alteryx/featuretools)
 [https://github.com/academic/awesome-datascience#data-sets](https://github.com/academic/awesome-datascience#data-sets)
 [https://github.com/visenger/awesome-mlops](https://github.com/visenger/awesome-mlops)
-
-<br>
-<br>
+github actions : [https://mlops.githubapp.com/examples](https://mlops.githubapp.com/examples)
+[https://neptune.ai/blog/best-mlops-platforms-to-manage-machine-learning-lifecycle](https://neptune.ai/blog/best-mlops-platforms-to-manage-machine-learning-lifecycle)
+[https://towardsdatascience.com/mlops-practices-for-data-scientists-dbb01be45dd8](https://towardsdatascience.com/mlops-practices-for-data-scientists-dbb01be45dd8)
+steppy, modelstore, sacred : [https://github.com/EthicalML/awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning) [good]

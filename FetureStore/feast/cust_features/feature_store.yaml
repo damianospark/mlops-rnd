@@ -1,0 +1,3 @@
+project: cust_features
+registry: gs://test_jacklyn/registry_cust.db
+provider: gcp

@@ -2,25 +2,11 @@
   "name": "",
   "isOrdered": true,
   "folders": {
-    "evidently": {
-      "name": "evidently",
-      "isOrdered": true,
-      "folders": {},
-      "files": {}
-    },
     "raycore": {
       "name": "raycore",
       "isOrdered": true,
       "folders": {},
       "files": {}
-    },
-    "Feature Store-feast": {
-      "name": "Feature Store-feast",
-      "isOrdered": true,
-      "folders": {},
-      "files": {
-        "README": 0
-      }
     },
     "gcp": {
       "name": "gcp",
@@ -35,6 +21,18 @@
       "files": {
         "README": 0
       }
+    },
+    "FetureStore": {
+      "name": "FetureStore",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Monitoring": {
+      "name": "Monitoring",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
     }
   },
   "files": {
