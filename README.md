@@ -69,7 +69,7 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 
 ##### Dataset candidates
 
-<span class="colour" style="color: rgb(98, 98, 100);">[https://github.com/awesomedata/awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets)</span>
+<span class="colour" style="color:rgb(98, 98, 100)">[https://github.com/awesomedata/awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets)</span>
 [https://towardsdatascience.com/5-data-science-projects-that-you-can-complete-over-the-weekend-34445b14707d](https://towardsdatascience.com/5-data-science-projects-that-you-can-complete-over-the-weekend-34445b14707d)
 
 ##### Merlin training with criteo dataset

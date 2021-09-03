@@ -1,5 +1,4 @@
 {
-  
   "name": "",
   "isOrdered": true,
   "folders": {
@@ -26,11 +25,65 @@
     "FetureStore": {
       "name": "FetureStore",
       "isOrdered": true,
-      "folders": {},
-      "files": {}
+      "folders": {
+        "feast": {
+          "name": "feast",
+          "isOrdered": true,
+          "folders": {
+            "1.getting-started": {
+              "name": "1.getting-started",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "2.gcp-started": {
+              "name": "2.gcp-started",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "3.mlops-practice": {
+              "name": "3.mlops-practice",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "cust_features": {
+              "name": "cust_features",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "feature_repo": {
+              "name": "feature_repo",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "striking_cheetah": {
+              "name": "striking_cheetah",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            }
+          },
+          "files": {}
+        }
+      },
+      "files": {
+        "README": 0
+      }
     },
     "Monitoring": {
       "name": "Monitoring",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "README": 0
+      }
+    },
+    "~": {
+      "name": "~",
       "isOrdered": true,
       "folders": {},
       "files": {}
