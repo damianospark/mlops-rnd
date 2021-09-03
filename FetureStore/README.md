@@ -1,3 +1,5 @@
+*
+
 # Basics of Feature Store
 
 Feature stores are systems that help to address some of the key challenges that ML teams face when productionizing features.
@@ -5,7 +7,6 @@ Feature stores are systems that help to address some of the key challenges that 
 Tecton who is  the Primary Contributor to Feast exhibits straightforwardly and neatly comprehensive diagram describing Feature Store. However they only support a version working on AWS as of Sep. 3rd 2021. This affected my decision to test Feast since our working environment is Google cloud working with Bigquery.
 
 ![Tecton who is  the Primary Contributor to Feast exhibits straightforwardly and neatly comprehensive diagram describing Feature Store](https://docs.tecton.ai/v2/assets/docs/overviews/5_minute_dataflow_overview.png)
-
 <br>
 * **Feature sharing and reuse**: Engineering features is one of the most time consuming activities in building an end-to-end ML system, yet many teams continue to develop features in silos. This leads to a high amount of re-development and duplication of work across teams and projects.
 * **Serving features at scale**: Models need data that can come from a variety of sources, including event streams, data lakes, warehouses, or notebooks. ML teams need to be able to store and serve all these data sources to their models in a performant and reliable way. The challenge is scalably producing massive datasets of features for model training, and providing access to real-time feature data at low latency and high throughput in serving.
@@ -13,9 +14,11 @@ Tecton who is  the Primary Contributor to Feast exhibits straightforwardly and 
 * **Point-in-time correctness**: General purpose data systems are not built with ML use cases in mind and by extension don’t provide point-in-time correct lookups of feature data. Without a point-in-time correct view of data, models are trained on datasets that are not representative of what is found in production, leading to a drop in accuracy.
 * **Data quality and validation**: Features are business critical inputs to ML systems. Teams need to be confident in the quality of data that is served in production and need to be able to react when there is any drift in the underlying data.
 
+<br>
 There are many feature stores in the market which is rising fast. Even if some are integrated with not only feature store but also a few functions in MLOps, Our decision to research on Feast has been caused by its simplicity and compatibility with Google Cloud Platform. Considering fast growing technologies in MLOps industry, working well with existing solutions and services we are already adopted is most important criteria. Imagine that a heavy platform has a feature store competible with their own solutions in the process of MLOps which are not relevent to our system, this is not a good strategy.
 [Feast](http://feast.dev/) is an [open-source](https://github.com/feast-dev/feast) feature store that helps teams operate ML systems at scale by allowing them to define, manage, validate, and serve features to models in production.
 
+<br>
 # Architecture of Feast
 
 Feast comprise of eight functionalities and five components. Although Feast official document introduce the four components, IMHO, there are Five of them we should take it as components. Cylider shpaes and some of rectangles are components and edges represent functionalities.
@@ -24,7 +27,7 @@ Feast comprise of eight functionalities and five components. Although Feast offi
 
 ## Components
 
-1. **Feast Feature Repository** : The feature repository is the declarative source of truth for what the desired state of a feature store should be. Two important sets of configuration are store in this repository and feast handle them. More details can be found if you follow the link https://docs.feast.dev/reference/feature-repository
+1. **Feast Feature Repository** : The feature repository is the declarative source of truth for what the desired state of a feature store should be. Two important sets of configuration are store in this repository and feast handle them. More details can be found if you follow the link [https://docs.feast.dev/reference/feature-repository](https://docs.feast.dev/reference/feature-repository)
     * Configuration about how to run Feast on your infrastructure
     * Feature definitions
 2. **Feast Registry**: An object store (GCS, S3) based registry used to persist feature definitions that are registered with the feature store. Systems can discover feature data by interacting with the registry through the Feast SDK.
@@ -38,7 +41,7 @@ Feast comprise of eight functionalities and five components. Although Feast offi
 
 ## Functionalities
 
-1. <span class="colour" style="color:rgb(235, 219, 178)">**Create Batch Features**: ELT/ETL systems like Spark and SQL are used to transform data in the batch store.</span>
+1. **Create Batch Features**: ELT/ETL systems like Spark and SQL are used to transform data in the batch store.
 2. **Feast Apply**: The user (or CI) publishes versioned controlled feature definitions using feast apply. This CLI command updates infrastructure and persists definitions in the object store registry.
 3. **Feast Materialize**: The user (or scheduler) executes feast materialize which loads features from the offline store into the online store.
 4. **Model Training**: A model training pipeline is launched. It uses the Feast Python SDK to retrieve a training dataset and trains a model.
@@ -47,7 +50,6 @@ Feast comprise of eight functionalities and five components. Although Feast offi
 7. **Prediction**: A backend system makes a request for a prediction from the model serving service.
 8. **Get Online Features**: The model serving service makes a request to the Feast Online Serving service for online features using a Feast SDK.
 
-<br>
 <br>
 ## Features of Feast
 
@@ -68,10 +70,10 @@ Feast APIs can roughly be grouped into the following sections:
 * **Model training**: The Feast Python SDK can be used to trigger the [creation of training datasets](https://docs.feast.dev/feast-on-kubernetes/user-guide/getting-training-features). The most natural place to use this SDK is to create a training dataset as part of a [Kubeflow Pipeline](https://www.kubeflow.org/docs/components/pipelines/overview/pipelines-overview) prior to model training.
 * **Model serving**: Feast provides three different SDKs for [online feature serving](https://docs.feast.dev/feast-on-kubernetes/user-guide/getting-online-features), a [Python SDK](https://api.docs.feast.dev/python/), [Java SDK](https://javadoc.io/doc/dev.feast/feast-sdk), and [Go SDK](https://godoc.org/github.com/feast-dev/feast/sdk/go). These clients are used prior to inference with [Model Serving](https://www.kubeflow.org/docs/components/pipelines/overview/pipelines-overview) systems like KFServing, TFX, or Seldon.
 
-#### References
 
-> [https://www.featurestore.org/](https://www.featurestore.org/)
-> [https://www.tecton.ai/](https://www.tecton.ai/)
-> [https://medium.com/data-for-ai/2021-a-year-of-ml-feature-stores-adoption-e0f528506cad](https://medium.com/data-for-ai/2021-a-year-of-ml-feature-stores-adoption-e0f528506cad)
-> [https://docs.feast.dev/getting-started/concepts/overview](https://docs.feast.dev/getting-started/concepts/overview)
-> [https://www.kubeflow.org/docs/external-add-ons/feature-store/overview/](https://www.kubeflow.org/docs/external-add-ons/feature-store/overview/)
+> References
+* [https://www.featurestore.org/](https://www.featurestore.org/)
+* [https://www.tecton.ai/](https://www.tecton.ai/)
+* [https://medium.com/data-for-ai/2021-a-year-of-ml-feature-stores-adoption-e0f528506cad](https://medium.com/data-for-ai/2021-a-year-of-ml-feature-stores-adoption-e0f528506cad)
+* [https://docs.feast.dev/getting-started/concepts/overview](https://docs.feast.dev/getting-started/concepts/overview)
+* [https://www.kubeflow.org/docs/external-add-ons/feature-store/overview/](https://www.kubeflow.org/docs/external-add-ons/feature-store/overview/)

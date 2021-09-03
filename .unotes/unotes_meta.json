@@ -26,29 +26,22 @@
       "name": "FetureStore",
       "isOrdered": true,
       "folders": {
-        "feast": {
-          "name": "feast",
+        "1.getting-started": {
+          "name": "1.getting-started",
           "isOrdered": true,
-          "folders": {
-            "1.getting-started": {
-              "name": "1.getting-started",
-              "isOrdered": true,
-              "folders": {},
-              "files": {}
-            },
-            "2.gcp-started": {
-              "name": "2.gcp-started",
-              "isOrdered": true,
-              "folders": {},
-              "files": {}
-            },
-            "3.mlops-practice": {
-              "name": "3.mlops-practice",
-              "isOrdered": true,
-              "folders": {},
-              "files": {}
-            }
-          },
+          "folders": {},
+          "files": {}
+        },
+        "2.gcp-started": {
+          "name": "2.gcp-started",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "3.mlops-practice": {
+          "name": "3.mlops-practice",
+          "isOrdered": true,
+          "folders": {},
           "files": {}
         }
       },
