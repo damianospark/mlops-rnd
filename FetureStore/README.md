@@ -1,4 +1,3 @@
-*
 
 # Basics of Feature Store
 
@@ -18,7 +17,9 @@ Tecton who is  the Primary Contributor to Feast exhibits straightforwardly and 
 There are many feature stores in the market which is rising fast. Even if some are integrated with not only feature store but also a few functions in MLOps, Our decision to research on Feast has been caused by its simplicity and compatibility with Google Cloud Platform. Considering fast growing technologies in MLOps industry, working well with existing solutions and services we are already adopted is most important criteria. Imagine that a heavy platform has a feature store competible with their own solutions in the process of MLOps which are not relevent to our system, this is not a good strategy.
 [Feast](http://feast.dev/) is an [open-source](https://github.com/feast-dev/feast) feature store that helps teams operate ML systems at scale by allowing them to define, manage, validate, and serve features to models in production.
 
-<br>
+
+<br/><br/><br/>
+
 # Architecture of Feast
 
 Feast comprise of eight functionalities and five components. Although Feast official document introduce the four components, IMHO, there are Five of them we should take it as components. Cylider shpaes and some of rectangles are components and edges represent functionalities.
@@ -50,7 +51,9 @@ Feast comprise of eight functionalities and five components. Although Feast offi
 7. **Prediction**: A backend system makes a request for a prediction from the model serving service.
 8. **Get Online Features**: The model serving service makes a request to the Feast Online Serving service for online features using a Feast SDK.
 
+
 <br/>
+
 ## Features of Feast
 
 * **Load streaming and batch data**: Feast is built to be able to ingest data from a variety of bounded or unbounded sources. Feast allows users to ingest data from streams, object stores, databases, or notebooks. Data that is ingested into Feast is persisted in both online store and historical stores, which in turn is used for the creation of training datasets and serving features to online systems.
