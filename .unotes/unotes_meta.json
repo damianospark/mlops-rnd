@@ -22,8 +22,22 @@
         "README": 0
       }
     },
-    "FetureStore": {
-      "name": "FetureStore",
+    "Monitoring": {
+      "name": "Monitoring",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "README": 0
+      }
+    },
+    "~": {
+      "name": "~",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "FeatureStore": {
+      "name": "FeatureStore",
       "isOrdered": true,
       "folders": {
         "1.getting-started": {
@@ -48,20 +62,6 @@
       "files": {
         "README": 0
       }
-    },
-    "Monitoring": {
-      "name": "Monitoring",
-      "isOrdered": true,
-      "folders": {},
-      "files": {
-        "README": 0
-      }
-    },
-    "~": {
-      "name": "~",
-      "isOrdered": true,
-      "folders": {},
-      "files": {}
     }
   },
   "files": {
