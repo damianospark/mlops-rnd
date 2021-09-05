@@ -1,0 +1,8 @@
+project: local_onoff_repo
+registry: data/registry.db
+provider: local
+offline_store:
+  type: file
+online_store:
+  type: redis
+  connection_string: "localhost:6379"
