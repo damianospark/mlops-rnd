@@ -4,20 +4,21 @@
 
 
 # yes | jupyter kernelspec remove 
+env_nm=feast
 
 conda init --all
 conda deactivate
-conda create -n feast-conda-env python=3.7
+conda create -n $env_nm python=3.7
 conda env list
-conda activate feast-conda-env
-conda install -n feast-conda-env nb_conda_kernels
-#jupyter kernelspec install feast-conda-env
+conda activate $env_nm
+conda install -n $env_nm nb_conda_kernels
+#jupyter kernelspec install $env_nm
 
-conda install -n feast-conda-env  pip ipykernel
-python -m ipykernel install --user --name feast-conda-env --display-name "Feast Env"
+conda install -n $env_nm  pip ipykernel
+python -m ipykernel install --user --name $env_nm --display-name "$env_nm env"
 jupyter kernelspec list
 conda env list
-ls /opt/conda/envs/feast-conda-env
+ls /opt/conda/envs/$env_nm
 
 # pip uninstall luigi
 pip install feast[gcp] Pygments -U
