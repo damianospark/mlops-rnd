@@ -86,6 +86,7 @@ Evaluation codes to design quick win MLOps architecture with open sources. All c
 
 * [https://github.com/GokuMohandas/MLOps](https://github.com/GokuMohandas/MLOps)
 <br>
+
 ### etc
 
 * [https://github.com/dslp/dslp-repo-template](https://github.com/dslp/dslp-repo-template)
